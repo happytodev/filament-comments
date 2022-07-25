@@ -2,9 +2,9 @@
 
 namespace Happytodev\FilamentComments\Tests;
 
+use Happytodev\FilamentComments\FilamentCommentsServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Happytodev\FilamentComments\FilamentCommentsServiceProvider;
 
 class TestCase extends Orchestra
 {
