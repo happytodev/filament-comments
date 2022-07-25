@@ -2,9 +2,9 @@
 
 namespace Happytodev\FilamentComments;
 
+use Happytodev\FilamentComments\Commands\FilamentCommentsCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Happytodev\FilamentComments\Commands\FilamentCommentsCommand;
 
 class FilamentCommentsServiceProvider extends PackageServiceProvider
 {
