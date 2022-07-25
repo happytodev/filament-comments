@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Happytodev\FilamentComments\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class FilamentCommentsCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'filament-comments';
 
     public $description = 'My command';
 
