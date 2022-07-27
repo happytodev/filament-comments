@@ -1,6 +1,7 @@
 <?php
 
 //namespace Happytodev\FilamentComments\Components;
+
 namespace App\View\Components;
 
 use App\Models\Post;
@@ -17,8 +18,7 @@ class FilamentComments extends Component
     /**
      * Create a new component instance.
      *
-     * @param string $name
-     *
+     * @param  string  $name
      * @return void
      */
     public function __construct(Post $post)

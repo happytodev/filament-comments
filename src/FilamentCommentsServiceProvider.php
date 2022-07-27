@@ -2,20 +2,17 @@
 
 namespace Happytodev\FilamentComments;
 
-use Filament\PluginServiceProvider;
-use Illuminate\Support\Facades\Blade;
-// use Happytodev\FilamentComments\FilamentComments;
-use Spatie\LaravelPackageTools\Package;
 use App\View\Components\FilamentComments;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
+use Filament\PluginServiceProvider;
+// use Happytodev\FilamentComments\FilamentComments;
 use Happytodev\FilamentComments\Commands\FilamentCommentsCommand;
+use Illuminate\Support\Facades\Blade;
+use Spatie\LaravelPackageTools\Package;
 
 class FilamentCommentsServiceProvider extends PluginServiceProvider
 {
-
     public function boot()
     {
-
         parent::boot();
 
         if ($this->app->runningInConsole()) {
@@ -23,18 +20,17 @@ class FilamentCommentsServiceProvider extends PluginServiceProvider
             // @todo Find a better way to do this
             // if (! class_exists('User')) {
             $this->publishes([
-                __DIR__ . '/Models/Comment.php' => app_path('Models/Comment.php'),
+                __DIR__.'/Models/Comment.php' => app_path('Models/Comment.php'),
             ], 'filament-comments-models');
 
             // Load Blade components
             $this->publishes([
-                __DIR__ . '/App/View/Components' => app_path('View/Components'),
-                __DIR__ . '/../resources/views/components' => resource_path('views/components'),
+                __DIR__.'/App/View/Components' => app_path('View/Components'),
+                __DIR__.'/../resources/views/components' => resource_path('views/components'),
             ], 'filament-comments-components');
         }
 
         Blade::component('filament-comments', FilamentComments::class);
-
     }
 
     public function configurePackage(Package $package): void

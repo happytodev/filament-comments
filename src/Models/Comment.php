@@ -28,7 +28,7 @@ class Comment extends Model
         'commentable',
         'comment',
         'is_approved',
-        'user_id'
+        'user_id',
     ];
 
     /**
@@ -46,7 +46,6 @@ class Comment extends Model
      */
     protected $casts = [
     ];
-
 
     /**
      * Find user associated with this post
