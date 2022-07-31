@@ -8,7 +8,7 @@ class InstallFilamentCommentsPackage extends Command
 {
     protected $signature = 'filament-comments:install';
 
-    protected $description = "Install the Filaments plugin filament-comments";
+    protected $description = 'Install the Filaments plugin filament-comments';
 
     public function handle()
     {
@@ -18,7 +18,6 @@ class InstallFilamentCommentsPackage extends Command
 
         $this->publishModels(true);
         $this->info('>>> Filament-comments model added...');
-
 
         // $this->creatingResources();
 
@@ -37,8 +36,6 @@ class InstallFilamentCommentsPackage extends Command
         $this->publishConfig(true);
         $this->info('>>> Filament-comments config deployed...');
 
-
-
         // Installation done with success
         $this->info('Filament-Comments Package installed successfully.');
     }
@@ -47,7 +44,7 @@ class InstallFilamentCommentsPackage extends Command
     {
         $params = [
             '--provider' => "HappyToDev\FilamentComments\FilamentCommentsServiceProvider",
-            '--tag' => "filament-comments-config"
+            '--tag' => 'filament-comments-config',
         ];
 
         if ($forcePublish === true) {
@@ -61,7 +58,7 @@ class InstallFilamentCommentsPackage extends Command
     {
         $params = [
             '--provider' => "HappyToDev\FilamentComments\FilamentCommentsServiceProvider",
-            '--tag' => "filament-comments-components"
+            '--tag' => 'filament-comments-components',
         ];
 
         if ($forcePublish === true) {
@@ -75,7 +72,7 @@ class InstallFilamentCommentsPackage extends Command
     {
         $params = [
             '--provider' => "HappyToDev\FilamentComments\FilamentCommentsServiceProvider",
-            '--tag' => "filament-comments-livewire"
+            '--tag' => 'filament-comments-livewire',
         ];
 
         if ($forcePublish === true) {
@@ -95,8 +92,6 @@ class InstallFilamentCommentsPackage extends Command
     //     $this->call('vendor:publish', $params);
     // }
 
-
-
     // private function configExists($fileName)
     // {
     //     return File::exists(config_path($fileName));
@@ -109,7 +104,6 @@ class InstallFilamentCommentsPackage extends Command
     //         false
     //     );
     // }
-
 
     // private function publishConfiguration($forcePublish = false)
     // {
@@ -130,7 +124,7 @@ class InstallFilamentCommentsPackage extends Command
     {
         $params = [
             '--provider' => "HappyToDev\FilamentComments\FilamentCommentsServiceProvider",
-            '--tag' => "filament-comments-models"
+            '--tag' => 'filament-comments-models',
         ];
 
         if ($forcePublish === true) {

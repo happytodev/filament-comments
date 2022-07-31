@@ -4,9 +4,9 @@ namespace HappyToDev\FilamentComments;
 
 use App\View\Components\FilamentComments;
 use Filament\PluginServiceProvider;
+use HappyToDev\FilamentComments\Console\InstallFilamentCommentsPackage;
 use Illuminate\Support\Facades\Blade;
 use Spatie\LaravelPackageTools\Package;
-use HappyToDev\FilamentComments\Console\InstallFilamentCommentsPackage;
 
 class FilamentCommentsServiceProvider extends PluginServiceProvider
 {
@@ -31,28 +31,25 @@ class FilamentCommentsServiceProvider extends PluginServiceProvider
 
             // Load config
             $this->publishes([
-                __DIR__ . '/../config/comments.php' => config_path('comments.php'),
+                __DIR__.'/../config/comments.php' => config_path('comments.php'),
             ], 'filament-comments-config');
 
             // Load config
             $this->publishes([
-                __DIR__ . '/../resources/views/livewire' => resource_path('views/livewire'),
-                __DIR__ . '/App/Http/Livewire/FilamentComments' => app_path('Http/Livewire/FilamentComments'),
+                __DIR__.'/../resources/views/livewire' => resource_path('views/livewire'),
+                __DIR__.'/App/Http/Livewire/FilamentComments' => app_path('Http/Livewire/FilamentComments'),
             ], 'filament-comments-livewire');
-
 
             // Install Filement Comments command
             $this->commands([
                 InstallFilamentCommentsPackage::class,
             ]);
-
         }
 
         Blade::component('filament-comments', FilamentComments::class);
 
-        // Load views and defining key to call them 
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'filament-comments');
-
+        // Load views and defining key to call them
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'filament-comments');
     }
 
     public function configurePackage(Package $package): void

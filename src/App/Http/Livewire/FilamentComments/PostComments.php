@@ -3,22 +3,19 @@
 namespace App\Http\Livewire\FilamentComments;
 
 use App\Models\Comment;
-use Livewire\Component;
-use Illuminate\Support\Facades\URL;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Http\RedirectResponse;
-use Illuminate\Support\Facades\Session;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\URL;
+use Livewire\Component;
 
 class PostComments extends Component
 {
     use AuthorizesRequests;
-    
+
     public Comment $comment;
 
     public $commentable_id;
-
-
 
     public function mount()
     {
@@ -48,7 +45,6 @@ class PostComments extends Component
         'comment.commentable_type' => 'required|string',
     ];
 
-
     public function render()
     {
         //dd($this);
@@ -66,7 +62,7 @@ class PostComments extends Component
 
         $this->comment->save();
 
-        $this->comment->comment = "";
+        $this->comment->comment = '';
 
         $this->emitTo('filament-comments.show-comments', 'refreshComponent');
     }
