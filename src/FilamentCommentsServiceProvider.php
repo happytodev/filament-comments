@@ -3,7 +3,6 @@
 namespace HappyToDev\FilamentComments;
 
 use App\View\Components\FilamentComments;
-use Filament\PluginServiceProvider;
 use HappyToDev\FilamentComments\Console\InstallFilamentCommentsPackage;
 use Illuminate\Support\Facades\Blade;
 use Spatie\LaravelPackageTools\Package;
