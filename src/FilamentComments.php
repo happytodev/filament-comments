@@ -1,6 +1,6 @@
 <?php
 
-namespace Happytodev\FilamentComments;
+namespace HappyToDev\FilamentComments;
 
 class FilamentComments
 {

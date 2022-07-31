@@ -1,7 +1,5 @@
 <?php
 
-//namespace Happytodev\FilamentComments\Components;
-
 namespace App\View\Components;
 
 use App\Models\Post;

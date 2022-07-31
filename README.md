@@ -55,8 +55,8 @@ php artisan vendor:publish --tag="filament-comments-views"
 ## Usage
 
 ```php
-$filamentComments = new Happytodev\FilamentComments();
-echo $filamentComments->echoPhrase('Hello, Happytodev!');
+$filamentComments = new HappyToDev\FilamentComments();
+echo $filamentComments->echoPhrase('Hello, HappyToDev!');
 ```
 
 ## Testing

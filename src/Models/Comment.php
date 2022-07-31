@@ -56,4 +56,14 @@ class Comment extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    /**
+     * Find post associated with this post
+     *
+     * @return Post
+     */
+    public function post()
+    {
+        return $this->belongsTo(Post::class, 'commentable_id');
+    }
 }

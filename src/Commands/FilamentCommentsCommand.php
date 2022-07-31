@@ -1,6 +1,6 @@
 <?php
 
-namespace Happytodev\FilamentComments\Commands;
+namespace HappyToDev\FilamentComments\Commands;
 
 use Illuminate\Console\Command;
 

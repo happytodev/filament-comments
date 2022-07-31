@@ -1,6 +1,6 @@
 <?php
 
-namespace Happytodev\FilamentComments\Database\Factories;
+namespace HappyToDev\FilamentComments\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 

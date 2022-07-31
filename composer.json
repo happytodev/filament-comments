@@ -36,13 +36,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Happytodev\\FilamentComments\\": "src",
-            "Happytodev\\FilamentComments\\Database\\Factories\\": "database/factories"
+            "HappyToDev\\FilamentComments\\": "src",
+            "HappyToDev\\FilamentComments\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Happytodev\\FilamentComments\\Tests\\": "tests"
+            "HappyToDev\\FilamentComments\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -61,10 +61,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Happytodev\\FilamentComments\\FilamentCommentsServiceProvider"
+                "HappyToDev\\FilamentComments\\FilamentCommentsServiceProvider"
             ],
             "aliases": {
-                "FilamentComments": "Happytodev\\FilamentComments\\Facades\\FilamentComments"
+                "FilamentComments": "HappyToDev\\FilamentComments\\Facades\\FilamentComments"
             }
         }
     },

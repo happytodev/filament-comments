@@ -1,6 +1,5 @@
 <?php
 
-// config for Happytodev/FilamentComments
+// config for HappyToDev/FilamentComments
 return [
-
 ];

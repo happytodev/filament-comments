@@ -1,8 +1,8 @@
 <?php
 
-namespace Happytodev\FilamentComments\Tests;
+namespace HappyToDev\FilamentComments\Tests;
 
-use Happytodev\FilamentComments\FilamentCommentsServiceProvider;
+use HappyToDev\FilamentComments\FilamentCommentsServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
 
@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Happytodev\\FilamentComments\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'HappyToDev\\FilamentComments\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 
