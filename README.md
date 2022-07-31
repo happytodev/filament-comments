@@ -26,11 +26,10 @@ You can install the package via composer:
 composer require happytodev/filament-comments
 ```
 
-You can publish and run the migrations with:
+You can launch the installer of package like this:
 
 ```bash
-php artisan vendor:publish --tag="filament-comments-migrations"
-php artisan migrate
+php artisan filament-comments:install
 ```
 
 You can publish the config file with:
@@ -46,18 +45,9 @@ return [
 ];
 ```
 
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="filament-comments-views"
-```
 
 ## Usage
 
-```php
-$filamentComments = new HappyToDev\FilamentComments();
-echo $filamentComments->echoPhrase('Hello, HappyToDev!');
-```
 
 ## Testing
 
