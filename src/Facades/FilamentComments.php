@@ -1,11 +1,11 @@
 <?php
 
-namespace Happytodev\FilamentComments\Facades;
+namespace HappyToDev\FilamentComments\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Happytodev\FilamentComments\FilamentComments
+ * @see \HappyToDev\FilamentComments\FilamentComments
  */
 class FilamentComments extends Facade
 {

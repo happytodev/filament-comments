@@ -1,5 +1,5 @@
 <?php
 
-use Happytodev\FilamentComments\Tests\TestCase;
+use HappyToDev\FilamentComments\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);
