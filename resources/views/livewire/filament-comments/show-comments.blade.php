@@ -2,12 +2,11 @@
     <div class="flex flex-wrap mx-0 mb-6">
         <p class="text-white font-extrabold">Comments</p>
         @forelse ($comments as $comment)
-        {{-- @dd($comment) --}}
             <div class="w-full my-4 border border-1 rounded-lg p-4 {{($comment->user_id == $postAuthor) ? 'bg-blue-100' : 'bg-white' }}">
                 <div class="flex flex-row">
 
                     <div class="bg-indigo-100 rounded-full text-indigo-500 h-12 w-12 lg:h-24 lg:w-24">
-                        @if ($comment->user->picture)
+                        @if ($comment->user->picture ?? false)
                         <img src="{{ Storage::url($comment->user->picture) }}" alt="{{ $comment->user->name }} picture"
                         class="rounded-full h-12 lg:h-24">
                         @else
