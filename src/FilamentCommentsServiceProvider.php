@@ -2,12 +2,14 @@
 
 namespace HappyToDev\FilamentComments;
 
-use App\View\Components\FilamentComments;
-use HappyToDev\FilamentComments\Console\InstallFilamentCommentsPackage;
+use Filament\PluginServiceProvider;
 use Illuminate\Support\Facades\Blade;
 use Spatie\LaravelPackageTools\Package;
+use App\View\Components\FilamentComments;
+use HappyToDev\FilamentComments\Commands\FilamentCommentsCommand;
+use HappyToDev\FilamentComments\Console\InstallFilamentCommentsPackage;
 
-class FilamentCommentsServiceProvider extends PackageServiceProvider
+class FilamentCommentsServiceProvider extends PluginServiceProvider
 {
     public function boot()
     {
