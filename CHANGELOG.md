@@ -3,7 +3,11 @@
 All notable changes to `filament-comments` will be documented in this file.
 
 
-## v0.1.0 - 20220731
+
+## v0.1.1 - 2022-08-01
+- Fix a dependency miss in FilamentCommentsServiceProvider.php
+
+## v0.1.0 - 2022-07-31
 
 - First workin version
 - Comments managed with Livewire component
