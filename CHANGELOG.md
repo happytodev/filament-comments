@@ -3,6 +3,8 @@
 All notable changes to `filament-comments` will be documented in this file.
 
 
+## v0.1.3 - 2022-08-05
+- Optimize the display of comments in responsive mode with the use of grids
 
 ## v0.1.2 - 2022-08-02
 - Fix a little issue when user picture is not provided
